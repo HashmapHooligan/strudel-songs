@@ -1,0 +1,16 @@
+await samples('http://localhost:5432/')
+
+setcpm(110/4)
+
+stack(
+  sound(`bd hh bd*2 hh`)
+    .bank("rolandtr909")
+  ,
+
+  note("c2 e2 g2 a2 a#2 a2 g2 e2").transpose("<0 0 5 0 7 5 0 7>")
+  .sound("gm_acoustic_bass")
+  ._pianoroll(),
+  note("[c2 c3]*4").transpose("<0 0 5 0 7 5 0 7>")
+  .sound("gm_electric_bass_pick")
+  ._pianoroll()
+)
