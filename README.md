@@ -21,5 +21,5 @@
   - Switch back into the `strudel` folder, create a new folder `samples` and switch into it
   - Run `git clone https://github.com/geikha/tidal-drum-machines.git tidal` to clone drum samples
   - Run `git clone https://github.com/sgossner/VCSL.git` to clone the Versilian Community Sample Library
-  - Run `chmod +x ../songs/rename-dash-to-underscore-recursively.sh` and then `./../songs/rename-dash-to-underscore.sh' to rename all folders with dashes to underscores *(This is due to some samples being named with dashes, but Strudel REPL using underscores)*
+  - Run `chmod +x ../songs/rename-dash-to-underscore-recursively.sh` and then `./../songs/rename-dash-to-underscore.sh` to rename all folders with dashes to underscores *(This is due to some samples being named with dashes, but Strudel REPL using underscores)*
   - Run `pnpm dlx @strudel/sampler` to start the Sample Server
