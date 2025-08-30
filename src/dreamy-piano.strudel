@@ -1,0 +1,11 @@
+setcpm(60)
+
+$chords: n("0 2 4 <[6,8] [7,9]>")
+  .scale("<C:major A2:minor D:dorian G:mixolydian>/4")
+  .sound("piano")
+  ._pianoroll()
+
+$melody: n(irand(10).add("<-7 7 7 7>/2").seg("<2 4 8 4>").rib(2,4))
+  .scale("<C:major A2:minor D:dorian G:mixolydian>/4")
+  .lpf(slider(647.2, 100, 2000))
+  .sound("piano")
