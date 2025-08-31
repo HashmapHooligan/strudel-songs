@@ -1,0 +1,10 @@
+setcpm(110/4)
+
+$drums: sound("<bd     sd  [-  bd] sd>*8").gain(.6)
+
+$hihat: sound("hh!32").gain(.3)
+
+$melody: note(`<[d2 -] - - [d2 d2] d#2 d#2 [c2 c2] [- c2]
+                [d2 -] - - [d2 d2] d#2 d#2 [g2 g2] [f2 -]>*8`)
+         .sound("square, gm_synth_strings_1").fm(2).fmattack(.01).fmenv("exp")
+         ._scope()
